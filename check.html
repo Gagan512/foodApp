@@ -1,75 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="avatar"></div>
-            <div class="nav-items">
-                <ul>
-                    <li>
-                        <img src="./assets/search.svg" id="search-icon" />
-                        <input type="text" id="search-input" placeholder="Search" />
-                    </li>
-                    <li class="food-menu-btn">
-                        <img src="./assets/food.svg" id="food-menu-icon" />
-                        <p>Food Menu</p>
-                        <img src="./assets/arrow-down.svg" alt="" id="arrow-icon">
-                    </li>
-                    <div class="food-categories">
-                        <ul>
-                            <li>Pizzas</li>
-                            <li>Pastas</li>
-                            <li>Burgers</li>
-                            <li>Sandwiches</li>
-                            <li>Salads</li>
-                        </ul>
-                    </div>
-                    <li class="bar-menu-btn">
-                        <img src="./assets/drink.svg" id="bar-menu-icon" />
-                        <p>Bar Menu</p>
-                        <img id="arrow-icon" src="./assets/arrow-down.svg" alt="">
-                    </li>
-                    <div class="bar-categories">
-                        <ul>
-                            <li>Breezers</li>
-                            <li>Beer</li>
-                            <li>Mocktails</li>
-                            <li>Cocktails</li>
-                            <li>Coffee</li>
-                        </ul>
-                    </div>
-                    <li class="booking-btn">
-                        <img src="./assets/book.svg" id="bookings-icon" />
-                        <p>Bookings</p>
-                        <img src="./assets/arrow-down.svg" alt="" id="arrow-icon">
-                    </li>
-                    <div class="booking-categories">
-                        <ul>
-                            <li>Birthday</li>
-                            <li>kitty</li>
-                            <li>Business Meeting</li>
-                            <li>Anniversary</li>
-                            <li>Other</li>
-                        </ul>
-                    </div>
-                </ul>
+      <nav>
+        <div class="avatar"></div>
+        <div class="nav-items">
+          <ul>
+            <li>
+              <img src="./assets/search.svg" id="search-icon" />
+              <input type="text" id="search-input" placeholder="Search" />
+            </li>
+            <li class="food-menu-btn">
+              <img src="./assets/food.svg" id="food-menu-icon" />
+              <p>Food Menu</p>
+              <img src="./assets/arrow-down.svg" alt="" id="arrow-icon" />
+            </li>
+            <div class="food-categories">
+              <ul>
+                <li>Pizzas</li>
+                <li>Pastas</li>
+                <li>Burgers</li>
+                <li>Sandwiches</li>
+                <li>Salads</li>
+              </ul>
             </div>
-        </nav>
+            <li class="bar-menu-btn">
+              <img src="./assets/drink.svg" id="bar-menu-icon" />
+              <p>Bar Menu</p>
+              <img id="arrow-icon" src="./assets/arrow-down.svg" alt="" />
+            </li>
+            <div class="bar-categories">
+              <ul>
+                <li>Breezers</li>
+                <li>Beer</li>
+                <li>Mocktails</li>
+                <li>Cocktails</li>
+                <li>Coffee</li>
+              </ul>
+            </div>
+            <li class="booking-btn">
+              <img src="./assets/book.svg" id="bookings-icon" />
+              <p>Bookings</p>
+              <img src="./assets/arrow-down.svg" alt="" id="arrow-icon" />
+            </li>
+            <div class="booking-categories">
+              <ul>
+                <li>Birthday</li>
+                <li>kitty</li>
+                <li>Business Meeting</li>
+                <li>Anniversary</li>
+                <li>Other</li>
+              </ul>
+            </div>
+            <li>
+              <img src="./assets/heart.svg" id="favourites-icon" />
+              <p>Favourites</p>
+            </li>
+            <li>
+              <img src="./assets/clock.svg" id="history-icon" />
+              <p>Order History</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main class="c">
-        <section class="check-items"></section>
-        <section class="bill"></section>
+    <main class="check-main">
+      <section class="check-items">
+        <h1>Items</h1>
+        <div id="check-item">
+          <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+          <div id="check-item-info">
+            <div id="first-div">
+              <p id="check-item-heading">Have You Been To Mexico</p>
+              <p id="check-item-price">Rs. 240</p>
+            </div>
+            <div id="second-div">
+              <p id="check-item-qty">Qty. 4</p>
+            </div>
+            <div id="third-div">
+              <div id="qty-btn-container">
+                <button id="decrease-btn">-</button>
+                <button id="increase-btn">+</button>
+              </div>
+              <p id="check-item-total">Total 4 x 240 = 960</p>
+            </div>
+          </div>
+          <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+        </div>
+
+        <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+
+          <div id="check-item">
+            <img src="./assets/pizza2.png" alt="" id="check-item-img" />
+            <div id="check-item-info">
+              <div id="first-div">
+                <p id="check-item-heading">Have You Been To Mexico</p>
+                <p id="check-item-price">Rs. 240</p>
+              </div>
+              <div id="second-div">
+                <p id="check-item-qty">Qty. 4</p>
+              </div>
+              <div id="third-div">
+                <div id="qty-btn-container">
+                  <button id="decrease-btn">-</button>
+                  <button id="increase-btn">+</button>
+                </div>
+                <p id="check-item-total">Total 4 x 240 = 960</p>
+              </div>
+            </div>
+            <img src="./assets/x-circle.svg" alt="" id="delete-btn" />
+          </div>
+      </section>
+      <section class="bill-container">
+        <div class="bill">
+            <h1 id="table-no">Table No. 2</h1>
+            <div class="bill-sub-container">
+                <div class="bill-keys">
+                    <p>Sub Total</p>
+                    <p>CGST</p>
+                    <p>SGST</p>
+                    <p>Round Off</p>
+                    <p>Grand Total</p>
+                </div>
+                <div class="bill-values">
+                    <p>2630</p>
+                    <p>131.5</p>
+                    <p>131.5</p>
+                    <p>000.0</p>
+                    <p>2863</p>
+                </div>
+            </div>
+        </div>
+      </section>
     </main>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
